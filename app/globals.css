@@ -34,6 +34,13 @@ body {
 }
 
 .image {
-  background: url("../images/pexels-melvin-buezo-2529148.jpg") no-repeat center;
+  border-radius: 64px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 31.12%,
+      rgba(0, 0, 0, 0.5) 66.06%
+    ),
+    url("../images/pexels-melvin-buezo-2529148.jpg") center no-repeat;
+
   background-size: cover;
 }

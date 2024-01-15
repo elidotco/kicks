@@ -11,7 +11,7 @@ import { Bars3Icon } from "@heroicons/react/20/solid";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-20 p-[32px] hidden  bg-[#fafafa] md:flex justify-between flex-row  mb-20 rounded-3xl  items-center ">
+      <div className="w-full h-20 p-[32px] hidden  bg-[#fafafa] md:flex justify-between flex-row  mb-2 rounded-3xl  items-center ">
         {" "}
         <ul className="flex justify-between  gap-5">
           <li>🔥 New Drops</li>

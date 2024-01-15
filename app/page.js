@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col  pb-44">
-      <h1 className="text-6xl font-bold uppercase lg:text-[194px]  w-[auto] ">
+      <h1 className="text-[50px] text-center font-bold uppercase lg:text-[194px]  w-[auto] ">
         DO it <span className="text-[#4A69E2] "> Right</span>
       </h1>
       <Hero />
