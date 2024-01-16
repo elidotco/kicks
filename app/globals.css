@@ -34,7 +34,6 @@ body {
 }
 
 .image {
-  border-radius: 64px;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 31.12%,
@@ -43,4 +42,8 @@ body {
     url("../images/pexels-melvin-buezo-2529148.jpg") center no-repeat;
 
   background-size: cover;
+}
+
+.imgs {
+  background: url("../images/img1.jpg");
 }
