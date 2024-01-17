@@ -6,9 +6,12 @@ const Hero = () => {
     <div>
       <div className="  w-full">
         <div
-          className="image w-full h-[360px] lg:h-[750px] rounded-xl lg:rounded-[64px]
+          className="image w-full h-[360px] lg:h-[750px] relative rounded-xl lg:rounded-[64px]
            lg:p-10 flex p-4 "
         >
+          <div className="bg-black tag -rotate-90 p-3 md:p-6 h-4 aboslute -left-[60px] lg:-left-[83px] lg:top-40 top-[80px] text-white flex justify-center items-center rounded-b-2xl lg:text-base text-xs">
+            Nike product of the year
+          </div>
           <div className="mt-auto flex flex-row justify-between w-full items-center">
             <div className="w-4/6 mt-auto">
               <h2 className="text-2xl lg:text-[74px] lg:pb-4 font-semibold text-[#fff]">
@@ -32,6 +35,17 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        <section className="pt-24">
+          <div className="flex justify-between items-end">
+            <h2 className="text-7xl uppercase font-semibold w-2/4 ">
+              Don’t miss out new drops
+            </h2>
+            <button className="h-12 w-48 bg-[#4A69E2] rounded-lg text-white">
+              Shop New Drops
+            </button>
+          </div>
+        </section>
       </div>
     </div>
   );
