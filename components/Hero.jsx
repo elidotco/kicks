@@ -45,12 +45,12 @@ const Hero = () => {
             <h2 className="lg:text-7xl text-2xl lg:uppercase font-semibold w-2/4 ">
               Don’t miss out new drops
             </h2>
-            <button className="md:h-12 h-8 w-36 md:w-48 bg-[#4A69E2] rounded-lg text-white">
+            <button className="md:h-12 h-10 w-36 md:w-48 bg-[#4A69E2] rounded-lg text-white">
               Shop New Drops
             </button>
           </div>
           {/* new Drops section */}
-          <div className="w-full flex flex-row gap-4 justify-between flex-wrap">
+          <div className="w-full flex flex-row justify-between flex-wrap">
             {data.map((item) => (
               <Cards data={item} key={item.name} />
             ))}
