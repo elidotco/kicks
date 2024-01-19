@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="w-full h-[52px] bg-[#fafafa] p-[20px] rounded-xl md:hidden flex items-center justify-between">
-        <Bars3Icon class="h-6 w-6 text-gray-500" />
+        <Bars3Icon className="h-6 w-6 text-gray-500" />
         <Image
           src={logo}
           alt="logo"

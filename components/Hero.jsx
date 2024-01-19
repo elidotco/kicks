@@ -1,7 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import data from "@/data/data.js";
+import { Cards } from ".";
 
 const Hero = () => {
+  let dt = 23;
+
   return (
     <div>
       <div className="  w-full">
@@ -37,13 +41,19 @@ const Hero = () => {
         </div>
 
         <section className="pt-24">
-          <div className="flex justify-between items-end">
-            <h2 className="text-7xl uppercase font-semibold w-2/4 ">
+          <div className="flex justify-between items-end mb-14">
+            <h2 className="lg:text-7xl text-2xl lg:uppercase font-semibold w-2/4 ">
               Don’t miss out new drops
             </h2>
-            <button className="h-12 w-48 bg-[#4A69E2] rounded-lg text-white">
+            <button className="md:h-12 h-8 w-36 md:w-48 bg-[#4A69E2] rounded-lg text-white">
               Shop New Drops
             </button>
+          </div>
+          {/* new Drops section */}
+          <div className="w-full flex flex-row gap-4 justify-between flex-wrap">
+            {data.map((item) => (
+              <Cards data={item} key={item.name} />
+            ))}
           </div>
         </section>
       </div>
