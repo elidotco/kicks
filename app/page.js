@@ -1,5 +1,4 @@
-import { Hero } from "@/components";
-import Image from "next/image";
+import { Category, Hero } from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +7,7 @@ export default function Home() {
         DO it <span className="text-[#4A69E2] "> Right</span>
       </h1>
       <Hero />
+      <Category />
     </main>
   );
 }

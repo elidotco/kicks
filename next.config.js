@@ -2,14 +2,6 @@
 const nextConfig = {
   images: {
     domains: ["shorturl.at"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "bit.ly",
-        port: "",
-        pathname: "",
-      },
-    ],
   },
 };
 

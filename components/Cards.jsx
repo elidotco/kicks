@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 const Cards = ({ data }) => {
-  console.log(data);
   return (
     <div className="w-[46%] md:w-[23%] ">
       <Image
