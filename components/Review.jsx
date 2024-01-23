@@ -1,4 +1,5 @@
 import React from "react";
+import { Rcards } from ".";
 
 const Review = () => {
   return (
@@ -10,6 +11,12 @@ const Review = () => {
         <button className="md:h-12 h-10 w-36 md:w-20 bg-[#4A69E2] rounded-lg text-white">
           See All
         </button>
+      </div>
+      {/* review cards section */}
+      <div className="w-full flex justify-between flex-wrap items-center ">
+        <Rcards />
+        <Rcards />
+        <Rcards />
       </div>
     </div>
   );
