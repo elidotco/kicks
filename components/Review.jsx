@@ -1,5 +1,6 @@
 import React from "react";
 import { Rcards } from ".";
+import rdata from "@/data/rdata";
 
 const Review = () => {
   return (
@@ -13,10 +14,10 @@ const Review = () => {
         </button>
       </div>
       {/* review cards section */}
-      <div className="w-full flex justify-between flex-wrap items-center ">
-        <Rcards />
-        <Rcards />
-        <Rcards />
+      <div className="w-full flex justify-between gap-10 flex-wrap items-center ">
+        {rdata.map((item, index) => (
+          <Rcards key={index} data={item} />
+        ))}
       </div>
     </div>
   );

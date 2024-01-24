@@ -16,4 +16,5 @@ const data = [
     image: ["https://shorturl.at/ilqZ3"],
   },
 ];
+
 export default data;
