@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../images/Logo.png";
 import Image from "next/image";
+import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -53,15 +54,20 @@ const Footer = () => {
             <p>Blog</p>
             <p>Contact</p>
           </div>
-          <div className="">
-            <h2 className="font-semibold text-3xl text-[#FFA52F]">Follow us</h2>
+          {/* Social Media icons */}
+          <div className=" md:w-[25%]">
+            <h2 className="font-semibold text-3xl pb-5 text-[#FFA52F]">
+              Follow us
+            </h2>
             <div className="flex flex-row gap-5">
-              <p>About</p>
-              <p>Blog</p>
-              <p>Contact</p>
+              <FaFacebook className=" text-lg transition-all duration-100 hover:text-[#FFA52F]" />
+              <FaInstagram className=" text-lg transition-all duration-100 hover:text-[#FFA52F]" />
+              <FaTwitter className=" text-lg transition-all duration-100 hover:text-[#FFA52F]" />
+              <FaTiktok className=" text-lg transition-all duration-100 hover:text-[#FFA52F]" />
             </div>
           </div>
         </div>
+        {/* logo image at the end of the footer */}
         <Image
           src={logo}
           alt="also logo"
