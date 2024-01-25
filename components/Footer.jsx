@@ -13,7 +13,7 @@ const Footer = () => {
           </h3>
           <p className="text-[#fff]">Sign up for free! Join the communits</p>
           <div className=" gap-5">
-            <input className="bg-transparent h-12  w-[65%] rounded-lg border border-[#fafafa] " />
+            <input className="bg-transparent h-12  w-[60%] rounded-lg border border-[#fafafa] " />
             <button className="bg-black uppercase text-white px-5 py-3 ml-3 rounded-lg ">
               Submit
             </button>
