@@ -14,10 +14,15 @@ const Review = () => {
         </button>
       </div>
       {/* review cards section */}
-      <div className="w-full flex justify-between gap-10 flex-wrap items-center ">
+      <div className="w-full md:flex justify-between hidden gap-10 flex-wrap items-center ">
         {rdata.map((item, index) => (
           <Rcards key={index} data={item} />
         ))}
+      </div>
+      <div className="w-full md:hidden flex justify-between gap-10 flex-wrap items-center ">
+        {rdata.map((item, index) =>
+          index === 1 ? <Rcards key={index} data={item} /> : null
+        )}
       </div>
     </div>
   );
