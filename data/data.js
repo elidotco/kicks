@@ -9,7 +9,12 @@ const data = [
   },
   {
     name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
-    image: ["https://shorturl.at/jnZ34"],
+    image: [
+      "https://shorturl.at/jnZ34",
+      "https://shorturl.at/BHY68",
+      "https://shorturl.at/choK9",
+      "https://shorturl.at/knRT5",
+    ],
   },
   {
     name: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",

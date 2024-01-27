@@ -1,6 +1,7 @@
 "use client";
 
 import { HeartIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 import React from "react";
 
 const Product = ({ params }) => {
@@ -8,8 +9,37 @@ const Product = ({ params }) => {
     <div className="pt-10">
       {/* Product Page */}
       <div className="flex flex-col md:flex-row justify-between pb-10 ">
-        <div className="w-full md:w-4/6 bg-[#fafafa]  "></div>
-        <div className=" w-full md:w-1/3 bg-[#fafafa] gap-4 flex flex-col px-5 ">
+        <div className="w-full md:w-4/6  flex flex-row flex-wrap gap-4 ">
+          <Image
+            src="https://shorturl.at/agV28"
+            alt=""
+            width={300}
+            height={300}
+            className="w-[48%] h-[500px] rounded-tl-[48px]"
+          />
+          <Image
+            src="https://shorturl.at/BHY68"
+            alt=""
+            width={300}
+            height={300}
+            className="w-[48%] h-[500px] rounded-tr-[48px]"
+          />
+          <Image
+            src="https://shorturl.at/choK9"
+            alt=""
+            width={300}
+            height={300}
+            className="w-[48%] h-[500px] rounded-bl-[48px]"
+          />
+          <Image
+            src="https://shorturl.at/knRT5"
+            alt=""
+            width={300}
+            height={300}
+            className="w-[48%] h-[500px] rounded-br-[48px]"
+          />
+        </div>
+        <div className=" w-full md:w-1/3  gap-4 flex flex-col px-5 ">
           <p className="bg-blue-500 px-3 py-2 text-[#fff] rounded-xl w-32">
             New Release
           </p>
