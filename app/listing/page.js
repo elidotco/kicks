@@ -32,7 +32,6 @@ const page = () => {
         </div>
       </div>
       <Footer />
-      page
     </>
   );
 };
