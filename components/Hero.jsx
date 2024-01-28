@@ -51,8 +51,8 @@ const Hero = () => {
           </div>
           {/* new Drops section */}
           <div className="w-full flex flex-row justify-between gap-5 flex-wrap">
-            {data.map((item) => (
-              <Cards data={item} key={item.name} />
+            {data.map((item, index) => (
+              <Cards data={item} index={index} key={item.name} />
             ))}
           </div>
         </section>

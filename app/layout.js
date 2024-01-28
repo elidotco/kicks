@@ -17,8 +17,6 @@ export default function RootLayout({ children }) {
           inter.className + " bg-[#E7E7E3] lg:pl-20 lg:pr-20 lg:pt-10 pt-5 px-5"
         }
       >
-        <Navbar />
-
         {children}
       </body>
     </html>

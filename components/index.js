@@ -5,3 +5,4 @@ export { default as Category } from "./Category";
 export { default as Review } from "./Review";
 export { default as Rcards } from "./Rcards";
 export { default as Footer } from "./Footer";
+export { default as Carousel } from "./Carousel";
