@@ -8,10 +8,10 @@ import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Product = ({ params }) => {
-  const router = useRouter();
-  const arr = [0, 1, 2, 3, 4, 5];
+  const arr = ["0", "1", "2", "3", "4", "5"];
+  console.log(arr.includes(params.id));
   useEffect(() => {
-    if (arr.includes(params.idex) === false) {
+    if (arr.includes(params.id) === false) {
       router.push("/not-found");
     }
 
