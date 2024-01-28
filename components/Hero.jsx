@@ -2,9 +2,11 @@ import Image from "next/image";
 import React from "react";
 import data from "@/data/data.js";
 import { Cards } from ".";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
   let dt = 23;
+  const router = useRouter();
 
   return (
     <div>
@@ -25,7 +27,10 @@ const Hero = () => {
                 Nike introducing the new air max for everyone&apos; comfort
               </p>
 
-              <button className=" md:w-[143px] text-sm h-[42px] w-[100px]  text-white bg-[#4A69E2] rounded-lg">
+              <button
+                className=" md:w-[143px] text-sm h-[42px] w-[100px]  text-white bg-[#4A69E2] rounded-lg"
+                onClick={() => router.push("/product/1")}
+              >
                 {" "}
                 Shop Now
               </button>
@@ -45,7 +50,10 @@ const Hero = () => {
             <h2 className="lg:text-7xl text-2xl lg:uppercase font-semibold w-2/4 ">
               Don’t miss out new drops
             </h2>
-            <button className="md:h-12 h-10 w-36 md:w-48 bg-[#4A69E2] rounded-lg text-white">
+            <button
+              className="md:h-12 h-10 w-36 md:w-48 bg-[#4A69E2] rounded-lg text-white"
+              onClick={() => router.push("/listing")}
+            >
               Shop New Drops
             </button>
           </div>

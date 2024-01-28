@@ -6,3 +6,4 @@ export { default as Review } from "./Review";
 export { default as Rcards } from "./Rcards";
 export { default as Footer } from "./Footer";
 export { default as Carousel } from "./Carousel";
+export { default as Filter } from "./Filter";

@@ -54,3 +54,10 @@ body {
 .tag {
   position: absolute;
 }
+
+.listing-banner {
+  background: url("../images/listing.png") no-repeat;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}

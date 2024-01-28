@@ -3,10 +3,16 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const Cards = ({ data, isclass, index }) => {
+const Cards = ({ data, isclass, index, islist }) => {
   const router = useRouter();
   return (
-    <div className={isclass ? "w-full h-full " : "w-[46%] md:w-[23%] "}>
+    <div
+      className={
+        isclass
+          ? "w-full h-full "
+          : `w-[46%]  ${islist ? "md:w-[30%]" : "md:w-[23%]"} `
+      }
+    >
       <Image
         src={data.image[0]}
         alt="imageone"
