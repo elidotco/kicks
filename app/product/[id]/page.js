@@ -20,7 +20,6 @@ const Product = ({ params }) => {
 
   return (
     <>
-      <Navbar />
       <div className="pt-10">
         {/* Product Page */}
         <div className="flex flex-col md:flex-row justify-between pb-10 ">

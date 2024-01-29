@@ -5,7 +5,6 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <Navbar />
       <div className="listing-banner w-full rounded-[16px] lg:rounded-[48px]  h-48 md:h-[300px] my-10 p-5 text-white">
         <div className="md:w-[45%]">
           <p className="md:text-2xl">Limited time only</p>

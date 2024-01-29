@@ -7,3 +7,5 @@ export { default as Rcards } from "./Rcards";
 export { default as Footer } from "./Footer";
 export { default as Carousel } from "./Carousel";
 export { default as Filter } from "./Filter";
+export { default as Cart } from "./Cart";
+export { default as CartCard } from "./CartCard";
