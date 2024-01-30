@@ -16,7 +16,13 @@ const Navbar = () => {
       <div className="w-full h-20 p-[32px] hidden  bg-[#fafafa] md:flex justify-between flex-row  mb-2 rounded-3xl  items-center ">
         {" "}
         <ul className="flex justify-between  gap-5">
-          <li onClick={() => router.push(`/listing`)}> 🔥 New Drops</li>
+          <li
+            className="cursor-pointer"
+            onClick={() => router.push(`/listing`)}
+          >
+            {" "}
+            🔥 New Drops
+          </li>
           <Example name={"Men"} />
           <Example name={"Women"} />
         </ul>
