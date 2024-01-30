@@ -9,3 +9,4 @@ export { default as Carousel } from "./Carousel";
 export { default as Filter } from "./Filter";
 export { default as Cart } from "./Cart";
 export { default as CartCard } from "./CartCard";
+export { default as Checkout } from "./Checkout";

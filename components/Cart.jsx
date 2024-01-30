@@ -6,7 +6,7 @@ const Cart = () => {
   const items = [1, 3, 5];
   return (
     <div>
-      <div className="w-full my-20">
+      <div className="w-full my-5 md:my-10 lg:my-20">
         <p className="font-semibold text-3xl py-2">Saving to celebrate</p>
         <p>
           Enjoy up to 60% off thousands of styles during the End of Year sale -
