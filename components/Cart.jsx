@@ -1,8 +1,12 @@
+"use client";
+
 import ldata from "@/data/ldata";
 import React from "react";
 import { CartCard } from ".";
+import { useRouter } from "next/navigation";
 
 const Cart = () => {
+  const router = useRouter();
   const items = [1, 3, 5];
   return (
     <div>
@@ -53,7 +57,10 @@ const Cart = () => {
             <p className="font-semibold "> Total </p>
             <p className="font-semibold ">$136.00</p>
           </div>
-          <button className="w-full bg-black text-white rounded-lg px-4 py-2">
+          <button
+            onClick={() => router.push("/checkout")}
+            className="w-full bg-black text-white rounded-lg px-4 py-2"
+          >
             Checkout
           </button>
           <a href="#" className="underline">

@@ -7,14 +7,16 @@ import { CiSearch } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
 import Example from "./Dropdown";
 import { Bars3Icon } from "@heroicons/react/20/solid";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <>
       <div className="w-full h-20 p-[32px] hidden  bg-[#fafafa] md:flex justify-between flex-row  mb-2 rounded-3xl  items-center ">
         {" "}
         <ul className="flex justify-between  gap-5">
-          <li>🔥 New Drops</li>
+          <li onClick={() => router.push(`/listing`)}> 🔥 New Drops</li>
           <Example name={"Men"} />
           <Example name={"Women"} />
         </ul>
@@ -28,7 +30,10 @@ const Navbar = () => {
         <div className="flex gap-10 items-center ">
           <CiSearch size={20} />
           <FaUser size={20} />
-          <div className="rounded-full w-8 flex justify-center items-center h-8 bg-[#FFA527]">
+          <div
+            onClick={() => router.push("/cart")}
+            className="rounded-full cursor-pointer w-8 flex justify-center items-center h-8 bg-[#FFA527]"
+          >
             0
           </div>
         </div>
