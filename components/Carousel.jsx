@@ -49,19 +49,6 @@ const Carousel = () => {
               <Cards data={item} key={item.name} isclass={true} />
             </SwiperSlide>
           ))}
-          <SwiperSlide>
-            <div className="bg-green-500 w-full h-40"></div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-blue-500 w-full h-40 "></div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-red-500 w-full h-40"></div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-yellow-500 w-full h-40"></div>
-          </SwiperSlide>
-          ...
         </Swiper>
       </div>
       <div className="w-full md:hidden  mb-20 mt-20">
@@ -99,19 +86,6 @@ const Carousel = () => {
               <Cards data={item} key={item.name} isclass={true} />
             </SwiperSlide>
           ))}
-          <SwiperSlide>
-            <div className="bg-green-500 w-full h-40"></div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-blue-500 w-full h-40 "></div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-red-500 w-full h-40"></div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-yellow-500 w-full h-40"></div>
-          </SwiperSlide>
-          ...
         </Swiper>
       </div>
     </>

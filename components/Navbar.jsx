@@ -8,6 +8,7 @@ import { FaUser } from "react-icons/fa";
 import Example from "./Dropdown";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Navbar = () => {
   const router = useRouter();
@@ -26,13 +27,15 @@ const Navbar = () => {
           <Example name={"Men"} />
           <Example name={"Women"} />
         </ul>
-        <Image
-          src={logo}
-          alt="logo"
-          width={100}
-          height={550}
-          className="w-32 h-8"
-        />
+        <Link href="/">
+          <Image
+            src={logo}
+            alt="logo"
+            width={100}
+            height={550}
+            className="w-32 h-8 cursor-pointer"
+          />
+        </Link>
         <div className="flex gap-10 items-center ">
           <CiSearch size={20} />
           <FaUser size={20} />
