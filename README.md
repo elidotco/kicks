@@ -42,5 +42,6 @@ We wish you a delightful coding experience and success in building your Kicks e-
 
 Best regards,
 CODE LIVES
+you can follow me on instagram ["@codelives"]
 
 design by [https://visiata.com/]
